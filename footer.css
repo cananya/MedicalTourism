@@ -1,0 +1,20 @@
+.fContainer { 
+	width: 1200px;
+	margin-left: 18%;
+	margin-bottom: 5%;
+  	clear:both;
+  	padding: 30px;
+  }
+
+.fOne{
+  width:500px;
+  float:left;
+}
+.fSecond {
+ 	width:20%;
+ 	float:left;
+}
+.fThird {
+  	width:30%;
+  	float:left;
+}

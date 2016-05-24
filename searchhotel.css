@@ -1,0 +1,102 @@
+.container_12{ position: relative; width: 80%; margin: 0 auto; padding: 0;  }
+
+.container_12 .grid_1			{ width: 80%; float: left;}
+
+.container_12 .grid_1 h3 { text-align: center;}
+
+.container_12 .grid_2			{ width: 15%; float: right; margin-top: 2%;  }
+
+figure { float: left;
+         width: 33%;
+         padding-bottom: 10px;
+         margin-left: 15%;
+         margin-right: 40px;
+     }
+ figcaption { text-align: center;
+             font-style: italic;
+             font-family:'source_sans_proregular';
+              background-color: #EAEAEA; 
+              font-weight: bold;
+              width: 100%;
+}
+
+.block2 {
+    width: 100%;
+    height: 400px;
+}
+
+.block2 figure img{
+  margin-top: 3%;
+  margin-left: 20%;
+}
+
+.block2 figure figcaption{
+  margin-left:20%;
+  width: 87.5%;
+}
+
+.block2 .extra_wrapper {
+  float: right;
+  padding: 0 0 0 30px;
+  width: 60%;
+  text-align: justify;
+}
+.block2 .extra_wrapper p{
+   font-size: 1.1em;
+}
+.block2 .extra_wrapper h4{
+  font-weight: bold;
+}
+
+.grid_2 ul{
+	display:block;
+	clear:both;
+	margin:0;
+	padding:0;
+	width:100%;
+	text-align:center;
+}
+.grid_2 ul li{
+	list-style:none;
+	text-align: left;
+	position:relative;
+	cursor:pointer;
+}
+
+
+@media only screen and (max-width: 64em) {
+
+.block2 {
+    width: 100%;
+}
+.block2 .extra_wrapper{
+    margin-left: -50px;
+}
+.block2 .extra_wrapper h4{
+  margin-left: -50px;
+  font-size: 1em;
+}
+.block2 .extra_wrapper p{
+   margin-left: -50px;
+   font-size: 0.9em;
+}
+.block2 .extra_wrapper .link1{
+  font-size: 1em;
+}
+.block2 figure img{
+  margin-left: 10%;
+  width: 90%;
+  margin-top: 4%;
+}
+.block2 figure figcaption{
+  margin-left:10%;
+  width: 90%;
+}
+
+}
+
+
+
+
+
+

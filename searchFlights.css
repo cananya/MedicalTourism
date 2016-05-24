@@ -1,0 +1,514 @@
+.flights { 
+	width:80%; 
+	margin-left: 18%;
+	margin-bottom: 5%;
+  	clear:both;
+  	padding: 30px;
+  }
+.thambImg{
+	float:left;
+	margin:0 15px 0 0;
+	overflow-y:hidden;
+	height:100px}
+
+.thambImg img{
+	width:80px;
+	margin-top: -10px;
+}
+.f_hr{
+	width: 100%;
+	    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.first {
+  width:13%;
+  float:left;
+}
+.second {
+ 	width:35%;
+ 	float:left;
+}
+.third {
+  	width:12%;
+  	float:left;
+}
+.fourth {
+  	width:20%;
+  	float:left;
+}
+.fourth h3 {
+	margin-top: 0;
+}
+.dropbtn{
+	background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+	border-radius: 5px;
+	font-weight: normal;
+	height: 30px;
+	width: 100px;
+}
+
+.online_reservation{
+	z-index: 999;
+}
+.b_room{
+	box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	width: 70%;
+	position:absolute;
+}
+.booking_room {
+width: 100%;
+position:absolute;
+top:-20em;
+left:20%;
+z-index:1;
+}
+.reservation{
+	font-family: 'Open Sans', sans-serif;
+	padding:16px 10px;
+	float: left;
+	width:100%;
+	background: #2A2E33;
+	box-shadow: 2px 26px 37px -12px;
+	opacity: 0.9;
+}
+.booking_room h4{
+	font-size: 1.5em;
+	color: #202020;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.booking_room p{
+	font-size: 0.8725em;
+	color: #6b6b6b;
+	line-height: 1.8em;
+}
+.reservation ul li{
+	float: left;
+	list-style:none;
+}
+.reservation ul li.left{
+	margin-left: 15px;
+}
+.reservation ul li.span1_of_1{
+width: 24.33333%;
+margin-left: 1em;
+}
+.reservation ul li.span1_of_2{
+	width: 9.33333%;
+}
+.reservation ul li.span1_of_3{
+	width: 18.33333%;
+	margin-left: 20px;
+}
+.reservation h5{
+	font-size: 15px;
+	color: #FFD700;
+	text-transform: capitalize;
+	margin-bottom: 6px;
+}
+select {
+	width: 100%;
+	color: #858585;
+	font-size: 0.8725em;
+	padding: 7px;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	background: #ffffff;
+	
+}
+select option{
+	outline: none;
+	margin: 20px;
+}
+
+.room{
+	height: 2em;
+}
+.span1{
+width: 24.33333%;
+margin-left: 1em;
+}
+.span2{
+	width: 18.33333%;
+	margin-left: 1em;
+}
+.span2 button{
+	text-transform:capitalize;
+	width: 100%;
+	background: #128F9A;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	border: none;
+	font-size: 16px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+/**Featured Airlines**/
+
+
+.f_air{
+	background-color: #2c3138;
+	opacity: 0.8;
+	clear:both;
+	padding:40px 0 30px;
+	margin-top: -40px;
+}
+.f_air h2{
+	font-size:36px;
+	font-family:'source_sans_prolight';
+	margin:0 0 20px;
+	padding:0;
+	color:#fff;
+	text-align:center;
+	font-weight:300
+}
+.f_air ul{
+	display:block;
+	clear:both;
+	margin:0;
+	padding:0;
+	width:100%;
+	text-align:center
+}
+.f_air ul li{
+	display:inline-block;
+	list-style:none;
+	text-align:center;
+	margin:0 20px;
+	position:relative;
+	cursor:pointer
+}
+.f_air ul li p{
+	font-family:'source_sans_proregular';
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+	margin:0;
+	padding:0
+}
+.f_air ul li a img{
+width: 6.25em; 
+height:6.25em;
+}
+.f_air ul li:hover span{
+	display:block;
+	position:absolute;
+	top:0;
+	width:100%;
+	left:0;
+	text-align:center
+}
+.f_air ul li:hover p{
+	color:#819b06;
+	text-decoration:none;
+}
+.f_air ul li a img:hover{
+	color:#819b06;
+	text-decoration:none;
+}
+.f_air ul li:hover a{
+	text-decoration:none;
+}
+
+
+
+/**Images**/
+.content {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.content h2{
+	font-family:'source_sans_prolight';
+	font-size:44px;
+	color:#464c54;
+	text-align:center;
+	margin:0 0 25px;
+}
+.content h2 span{
+	font-family:'source_sans_prolight';
+	font-size:24px;
+	color:#464c54;
+	font-weight:300;
+	margin:0;
+	display:block
+}
+
+.container_12{ 
+    position: relative; 
+    width: 1300px; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+.banners {
+    overflow: hidden;
+    padding-top: 100px;
+}
+.banner {
+    margin-bottom: 25px;
+    top: -45px;
+    position: relative;
+}
+.grid_4{ 
+	float: left; 
+	display: inline; 
+	margin-left: 10px; 
+	margin-right: 10px; 
+}
+.banner img {
+    width: 100%;
+}
+.banner .label {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    margin-top: -38px;
+    right: 0;
+    text-transform: uppercase;
+}
+.banner .label .title {
+    font-size: 30px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+.banner .label .price span {
+    display: block;
+    font-size: 24px;
+    padding-top: 3px;
+}
+.banner a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #c73430;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #e5e5e5;
+    padding: 5px 18px 4px;
+    margin-top: 25px;
+    border-radius: 13px;
+}
+.banner a:hover {
+    background-color: #c73430;
+    color: #fff;
+}
+
+@media only screen and (max-width: 64em) {
+	
+.booking_room {
+	width: 140%;
+	top:-18em;
+	left:2%;
+	height: auto;
+	}
+	.b_room{
+	box-shadow: none;
+}
+	.span1{
+	width: 30%;
+	}
+	.span2{
+	width: 25%;
+	margin-left: 2px;
+	}
+	.container_12{ 
+    width: auto; 
+	}
+	.banners {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-left: 8%;
+	}
+	.flights{
+		margin-left: 5%;
+		width: 90%;
+	}
+	.thambImg img{
+	width:100%;
+	margin-top: -10px;
+	}
+
+	.first{
+		width: 10%;
+	}
+	.second {
+		width: 50%;
+ 	margin-left: 3%;
+	}
+	.second p{
+		font-size: 12px;
+	}
+	.third{
+		width: 20%;
+		margin-left: 2%;
+	}
+	.fourth{
+	width: 5%;
+	}
+	.fourth h3{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.dropbtn{
+    font-size: 12px;
+	height: 25px;
+	width: 80px;
+	}
+	.f_hr{
+	width: 100%
+	}
+	.span2 button{
+	margin-left: 130%;
+}
+	.feat_air{
+	width:auto;
+	height: auto;
+	margin-top: -170px;
+}
+.f_air h2{
+	font-size:24px;
+	margin:0 0 10px;
+	font-weight:200
+}
+.f_air ul li a img{
+width: 4.375em; 
+height:4.375em;
+}
+.f_air ul{
+	margin-left: -5px;
+}
+.f_air ul li{
+	margin:0 10px;
+	position:relative;
+	cursor:pointer
+}
+.f_air ul li p{
+	font-size:14px;
+}
+}
+@media only screen and (max-width: 37.5em) {
+	.b_room{
+	width: 100%;
+	margin-left: 0px;
+	float: left;
+}
+	.b_room{
+	box-shadow: none;
+}
+	.booking_room  {
+	top: 0em;
+  	z-index:0;
+  	margin-left: 0px;
+  	width: 100%;
+  	left:0%;
+  	position: relative;
+}
+	.span1{
+		width: 40%;
+	}
+	.span2{
+		width: 30%;
+		margin-left: 40px;
+	}
+	.container_12{ 
+    width: auto; 
+	}
+	.banners {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-bottom: 0px;
+	}
+	.online_reservation{
+		margin-bottom: 78%;
+	}
+		.span2 button{
+	margin-left: 50%;
+	width: 100px;
+	height: 40px;
+}
+	.thambImg img{
+	width:40px;
+	}
+
+	.flights{
+		margin-left: 5px;
+	}
+	.first{
+		margin-left: -12px;
+	}
+	.second {
+		width: 75%;
+ 		margin-left: 6%;
+	}
+	.second p{
+		font-weight: normal;
+		font-size: 8px;
+	}
+	.third{
+		display: none;
+	}
+	.third p{
+		font-weight: normal;
+		font-size: 8px;
+	}
+	.fourth
+	{
+		width: 7%;
+	}
+	.fourth h3{
+		font-size: 10px;
+		font-weight: normal;
+	}
+	.dropbtn{
+    font-size: 10px;
+	height: 18px;
+	width: 50px;
+	}
+	.f_hr{
+	width: 100%;
+	padding-top: -90px;
+	}
+	.f_air{
+	width:auto;
+	height: auto;
+}
+.f_air ul li a img{
+width: 4em; 
+height:4em;
+}
+.f_air ul{
+	margin-left: 0px;
+}
+.f_air ul li{
+	margin:0 20px;
+	cursor:pointer
+}
+.f_air ul li p{
+	font-size:9px;
+}
+.content h2{
+	font-size:20px;
+}
+.content h2 span{
+	font-size:14px;
+}
+
+   
+}
+
+
+
+
+
+
+
+

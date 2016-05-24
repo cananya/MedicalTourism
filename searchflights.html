@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<title> Flights
+</title>
+<meta>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title> Flights </title>
+<!--  *******************  Stylesheet  ******************    -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="searchFlights.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--  *******************  Header Area ******************    --> 
+<!--  *******************  Nav Bar Area ******************    -->
+    <header>
+    <nav class="navbar_mt">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="treatment.html">Compare Price</a></li>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="carrental.html">Car Rentals</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+  </header>
+
+<!--  *******************  Carousel Image Area ******************    -->
+
+<div class="main">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="image/main1.jpg" alt="main1">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--  *******************  Search Box ******************    -->
+
+    <script type="text/javascript">
+    function ddlValidate() {
+        var s = document.getElementById("select");
+        var p = document.getElementById("pass");
+        var c = document.getElementById("child");
+        var i = document.getElementById("infant");
+        var valueDate1 = document.getElementById('myDate1').value;
+        var valueDate2 = document.getElementById('myDate2').value;
+        var optionSelIndexs = s.options[s.selectedIndex].value;
+        var optionSelIndexp = p.options[p.selectedIndex].value;
+        var optionSelIndexc = c.options[c.selectedIndex].value;
+        var optionSelIndexi = i.options[i.selectedIndex].value;
+
+        if (optionSelIndexs == "select") {
+            alert("Please select a country");
+            return false;
+        }
+        else if (optionSelIndexp == "pass") {
+            alert("Please select number of Passengers");
+            return false;
+        }
+        else if (optionSelIndexc == "child" || optionSelIndexi == "infant") {
+            alert("Please select number of Children and Infants");
+            return false;
+        }else if(!Date.parse(valueDate1)){
+           alert('Arrival Date is invalid');
+        } else if(!Date.parse(valueDate2)){
+           alert('Departure Date is invalid');
+        }  else {
+
+          window.location.href='searchflights.html';
+        }
+            
+      }
+    </script>
+
+     <div class="online_reservation">
+           <div class="b_room">
+              <div class="booking_room">
+                  <div class="reservation">
+                      <ul>
+                        <li  class="span1">
+                             <h5>Departure</h5>
+                             <div class="book_date">
+                                 <form>
+                                <input type="date" name="myDate" id="myDate1"> 
+                                 </form>
+                             </div>                 
+                         </li>
+                         <li  class="span1">
+                             <h5>Arrival</h5>
+                             <div class="book_date">
+                             <form>
+                                <input type="date" name="myDate" id="myDate2"> 
+                             </form>
+                             </div>     
+                         </li>
+                         <li class="span1">
+                             <h5>Country</h5>
+                             <div>
+                                  <select id = "select" class="room">
+                                    <option value="select">Select Country</option> 
+                                    <option value="null">Costa Rica </option> 
+                                    <option value="null">Colombia</option> 
+                                    <option value="null">Thailand</option> 
+                                        <option value="null">India</option>
+                                        <option value="null">Israel</option>         
+                                        <option value="AX">Jordan</option>
+                                        <option value="AX">S. Korea</option>
+                                         <option value="null">Malaysia</option>
+                                  </select>
+                             </div> 
+                         </li>
+                         <li  class="span1">
+                             <h5>Passengers</h5>
+                             <div>
+                                  <select id = "pass" class="room" style="width: 50px;">
+                                    <option value="pass">No Of Passengers</option> 
+                                    <option value="null">1</option> 
+                                    <option value="null">2</option> 
+                                    <option value="null">3</option> 
+                                    <option value="null">4</option>
+                                    <option value="null">5</option>         
+
+                                  </select>
+                             </div>                  
+                         </li>
+                         <li  class="span1">
+                             <h5>Children</h5>
+                             <div>
+                                  <select id = "child" class="room" style="width: 50px;">
+                                    <option value="child">No Of Children</option> 
+                                    <option value="null">0</option> 
+                                    <option value="null">1</option> 
+                                    <option value="null">2</option> 
+                                    <option value="null">3</option> 
+                                    <option value="null">4</option>
+                                    <option value="null">5</option>         
+
+                                  </select>
+                             </div>                  
+                         </li>
+                         <li  class="span1">
+                             <h5>Infants</h5>
+                             <div>
+                                  <select id = "infant" class="room" style="width: 50px;">
+                                    <option value="infant">No Of Infants</option> 
+                                    <option value="null">0</option>
+                                    <option value="null">1</option> 
+                                    <option value="null">2</option> 
+                                    <option value="null">3</option> 
+                                    <option value="null">4</option>
+                                    <option value="null">5</option>         
+
+                                  </select>
+                             </div>                  
+                         </li>
+                         <li class="span2">
+                                <div>
+                                   <button onclick="ddlValidate();" type="button" >View Flights</button>
+                                </div>
+                         </li>
+                         <div class="clearfix"></div>
+                     </ul>
+                 </div>
+              </div>
+                <div class="clearfix"></div>
+          </div>
+      </div>
+
+<!--  *******************  Content Area ******************    -->
+
+<div class="flights">
+
+    <div class="first"> 
+        <div class="thambImg">
+        <a><img src="image/airindia.jpg"></a>
+        </div>
+    </div>
+
+    <div class="second">    
+        <p><b>6:00p BOS &#8594; 8:30a BLR 28h 00m 2 stops (JFK, AUH) </b></p>                      
+        <p><b>9:50a BLR &#8594; 12:37p BOS 37h 17m 2 stops (AUH, JFK) </b></p>
+    </div>
+
+    <div class="third"> 
+        <p>Economy</p>
+        <p>2 Passengers</p>
+    </div>
+
+    <div class="fourth">   
+        <h3>$1100</h3>
+        <button class="dropbtn" onclick="window.location.href='searchflights.html'" type="button" >View Deals</button>
+    </div>
+
+</div>
+
+<hr class="f_hr">
+
+<!--  *******************  Second Content Area ******************    -->
+
+<div class="flights">
+
+    <div class="first"> 
+        <div class="thambImg">
+        <a><img src="image/british.png"></a>
+        </div>
+    </div>
+
+    <div class="second">    
+        <p><b>6:00p BOS &#8594; 8:30a MUM 28h 00m 2 stops (JFK, AUH) </b></p>                      
+        <p><b>9:50a MUM &#8594; 12:37p BOS 37h 17m 2 stops (AUH, JFK) </b></p>
+    </div>
+
+    <div class="third"> 
+        <p>Economy</p>
+        <p>2 Passengers</p>
+    </div>
+
+    <div class="fourth">   
+        <h3>$1200</h3>
+        <button class="dropbtn" onclick="window.location.href='searchflights.html'" type="button" >View Deals</button>
+    </div>
+
+</div>
+
+<hr class="f_hr">
+
+<!--  *******************  Third Content Area ******************    -->
+
+<div class="flights">
+
+    <div class="first"> 
+        <div class="thambImg">
+        <a><img src="image/british.png"></a>
+        </div>
+    </div>
+
+    <div class="second">    
+        <p><b>6:00p BOS &#8594; 8:30a DEL 28h 00m 2 stops (JFK, AUH) </b></p>                      
+        <p><b>9:50a DEL &#8594; 12:37p BOS 37h 17m 2 stops (AUH, JFK) </b></p>
+    </div>
+
+    <div class="third"> 
+        <p>Economy</p>
+        <p>2 Passengers</p>
+    </div>
+
+    <div class="fourth">   
+        <h3>$1250</h3>
+        <button class="dropbtn" onclick="window.location.href='searchflights.html'" type="button" >View Deals</button>
+    </div>
+
+</div>
+
+<hr class="f_hr">
+
+<!--  *******************  Fourth Content Area ******************    -->
+
+<div class="flights">
+
+    <div class="first"> 
+        <div class="thambImg">
+        <a><img src="image/dragon.jpg"></a>
+        </div>
+    </div>
+
+    <div class="second">    
+        <p><b>6:00p BOS &#8594; 8:30a CHE 28h 00m 2 stops (JFK, AUH) </b></p>                      
+        <p><b>9:50a CHE &#8594; 12:37p BOS 37h 17m 2 stops (AUH, JFK) </b></p>
+    </div>
+
+    <div class="third"> 
+        <p>Economy</p>
+        <p>2 Passengers</p>
+    </div>
+
+    <div class="fourth">   
+        <h3>$1000</h3>
+        <button class="dropbtn" onclick="window.location.href='searchflights.html'" type="button" >View Deals</button>
+    </div>
+
+</div>
+
+<!--  *******************  Footer Top Area ******************    -->
+
+<div class="fContainer">
+            <div class="fOne"> 
+                  
+                  <p><a href="index.html">Medical Tourism</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practices and up-to-date web technologies to create great user experiences. We love what we do and we hope you do too! </p>
+                <h5><b>Quick Links</b></h5>
+                <ul>
+                  <li><a href="index.html" >Home</a></li>
+                   <li><a href="hospital.html" >Treatment</a></li>
+                    <li><a href="aboutus.html" >About US</a></li>
+                     <li><a href="contactus.html" >Contact US</a></li>
+                </ul> 
+            </div>
+
+            <div class="fSecond">    
+                <h3>Medical Tourism</h3>
+                        <address>
+                            <p>320 Huntington Ave.<br>
+                                Boston, MA 02120-2125 USA <br>
+                                615.987.1234 <br>
+                              <a href="medicaltourism@neu.com">medicaltourism@neu.com</a> </p>
+                        </address>
+            </div>
+
+            <div class="fThird"> 
+                <h3>Follow us, we are social</h3>
+                            <ul>
+                                <li><a href="#" ><img src="image/googleplus.png"></a></li>
+                                <li><a href="https://facebook.com/medicaltourismassociation/" target="_blank"><img src="image/facebookLogo.png"></a></li>
+                                <li><a href="#"><img src="image/twitter.png"></a></li>
+                                <li><a href="#"><img src="image/linkedin.png"></a></li>
+                                <li><a href="#"><img src="image/email.png"></a></li>
+                            </ul>    
+            </div>
+            <br><br>
+        </div>
+<!--  *******************  Footer Area ******************    -->
+        <footer>
+            <div class="copyright">
+                <small>Copyright &copy; 2016 medicaltourism.com</small><br>
+                <small><a href="mailto:medicaltourism.neu.edu">medicaltourism.neu.edu</a></small>
+            </div>
+        </footer>
+</body>
+</html>

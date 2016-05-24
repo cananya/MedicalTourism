@@ -1,0 +1,260 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+body { 
+	font: 14px/1.4 Georgia, Serif; 
+}
+#page-wrap {
+	margin: 50px;
+}
+p {
+	margin: 20px 0; 
+}
+
+.top_sp{
+	background-color: #2c3138;
+	clear:both;
+	overflow:hidden;
+	width:100%;
+	padding:40px 0 30px;
+	margin-top: -10px;
+}
+.top_sp h2{
+	font-size:36px;
+	font-family:'source_sans_prolight';
+	margin:0 0 20px;
+	padding:0;
+	color:#fff;
+	text-align:center;
+	font-weight:300
+}
+.top_sp ul{
+	display:block;
+	clear:both;
+	margin:0;
+	padding:0;
+	width:100%;
+	text-align:center
+}
+.top_sp ul li{
+	display:inline-block;
+	list-style:none;
+	text-align:center;
+	margin:0 20px;
+	position:relative;
+	cursor:pointer
+}
+.top_sp ul li p{
+	font-family:'source_sans_proregular';
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+	margin:0;
+	padding:0
+}
+.top_sp ul li a img{
+width: 50%; 
+height:50%;
+}
+.top_sp ul li:hover span{
+	display:block;
+	position:absolute;
+	top:0;
+	width:100%;
+	left:0;
+	text-align:center
+}
+.top_sp ul li:hover p{
+	color:#819b06;
+	text-decoration:none;
+}
+.top_sp ul li a img:hover{
+	color:#819b06;
+	text-decoration:none;
+}
+.top_sp ul li:hover a{
+	text-decoration:none;
+}
+
+	/* 
+	Generic Styling, for Desktops/Laptops 
+	*/
+
+	.comp_table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* Zebra striping */
+	.comp_table tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+	.comp_table th { 
+		background: #333; 
+		color: white; 
+		font-weight: bold; 
+	}
+	.comp_table td, .comp_table th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+
+	#page-wrap h1{
+		text-indent: -170px;
+	}
+
+
+
+
+@media
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		.comp_table, .comp_table thead, .comp_table tbody, .comp_table th, .comp_table td, .comp_table tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		.comp_table thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		.comp_table tr { border: 1px solid #ccc; }
+
+		.comp_table td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		.comp_table td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		/*
+		Label the data
+		*/
+		.comp_table td:nth-of-type(1):before { content: "Medical Procedure"; }
+		.comp_table td:nth-of-type(2):before { content: "USA"; }
+		.comp_table td:nth-of-type(3):before { content: "Costa Rica"; }
+		.comp_table td:nth-of-type(4):before { content: "Columbia"; }
+		.comp_table td:nth-of-type(5):before { content: "India"; }
+		.comp_table td:nth-of-type(6):before { content: "Jordan"; }
+		.comp_table td:nth-of-type(7):before { content: "S. Korea"; }
+		.comp_table td:nth-of-type(8):before { content: "Mexico"; }
+		.comp_table td:nth-of-type(9):before { content: "Isreal"; }
+		.comp_table td:nth-of-type(10):before { content: "Thailand"; }
+		.comp_table td:nth-of-type(11):before { content: "Vietnam"; }
+		.comp_table td:nth-of-type(12):before { content: "Malaysia"; }
+		.comp_table td:nth-of-type(13):before { content: "Poland"; }
+		.comp_table td:nth-of-type(14):before { content: "Singapore"; }
+		.comp_table td:nth-of-type(15):before { content: "Turkey"; }
+
+
+		.top_sp{
+	width:auto;
+	height: auto;
+	margin-top: -10px;
+}
+.top_sp h2{
+	font-size:24px;
+	margin:0 0 10px;
+	font-weight:200
+}
+.top_sp ul li a img{
+width: 30%; 
+height:30%;
+}
+.top_sp ul{
+	width: 100%;
+	margin-left: -5px;
+}
+.top_sp ul li{
+	margin:0 10px;
+	position:relative;
+	cursor:pointer
+}
+.top_sp ul li p{
+	font-size:14px;
+}
+  #page-wrap h1 {
+  	text-indent: -410px;
+  }
+
+  #page-wrap p {
+  	text-align: left;
+  }
+
+
+	}
+
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body {
+			padding: 0;
+			margin: 0;
+			width: 400px; }
+
+			.top_sp{
+	width:auto;
+	height: auto;
+	margin-top: -10px;
+}
+
+  #page-wrap h1 {
+  	display: none;
+  }
+
+
+
+		}
+
+
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		.top_sp{
+	width:auto;
+	height: auto;
+	margin-top: -10px;
+}
+.top_sp h2{
+	font-size:24px;
+	margin:0 0 10px;
+	font-weight:200
+}
+.top_sp ul li a img{
+width: 30%; 
+height:30%;
+}
+.top_sp ul{
+	width: 100%;
+	margin-left: -5px;
+}
+.top_sp ul li{
+	margin:0 10px;
+	position:relative;
+	cursor:pointer
+}
+.top_sp ul li p{
+	font-size:14px;
+}
+
+  #page-wrap p {
+  	text-align: left;
+  }
+	}
